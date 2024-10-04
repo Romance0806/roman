@@ -1,0 +1,62 @@
+.milestone {
+	height: 423px;
+	width: 100%;
+	color: #009140;
+	font-size: 16px;
+	position: relative;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+}
+.milestone ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.owl-item a {
+	text-decoration: none;
+	color: #ffdcb0;
+	padding: 3px;
+	font-size: 20px;
+	line-height: 30px;
+}
+.owl-item.active.center a {
+	color: #ff9a1e;
+    font-size: 20px;
+    line-height: 30px;
+}
+.years {
+	position: relative;
+	height: 20px;
+	margin-top: 20%;
+}
+.years:after {
+	content: "";
+    position: absolute;
+    height: 1px;
+    width: 65%;
+    background: #674c01;
+    top: 67%;
+}
+.owl-stage > div:last-child > div.years:after {
+	width: 0;
+}
+.owl-stage {
+	display: flex;
+}
+.milestone-carousel.owl-carousel.owl-loaded.owl-drag {
+    margin-top: 2%;
+}
+.owl-carousel .owl-dot, .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev {
+	cursor: pointer;
+	cursor: hand;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
