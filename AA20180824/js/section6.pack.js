@@ -1,0 +1,1 @@
+(function(a){ArcheAge.namespace("Game.Section6");ArcheAge.Game.Section6=Class.extend({init:function(){this.moviePlayer=a("#bgMovie6").get(0)},run:function(){ArcheAge.Utils.isIE8()||this.moviePlayer.play()},reset:function(){ArcheAge.Utils.isIE8()||this.moviePlayer.pause()}})})(jQuery);
