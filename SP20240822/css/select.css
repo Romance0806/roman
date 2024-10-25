@@ -1,0 +1,149 @@
+﻿* {
+  /*border: 1px solid #f7f7f7;*/
+  font-family: 微軟正黑體;
+}
+html, body {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0px auto;
+  min-width: 1200px;
+  background: url(../images/select.jpg) no-repeat center top #fdebe7;
+  word-break: break-all;
+  overflow-x: hidden;
+}
+/*----Wrap----*/
+.wrap {
+	max-width: 1200px;
+	position: relative;
+	margin: 0px auto;
+	overflow: hidden;
+  z-index: 5;
+}
+/*----Logo----*/
+.logo {
+	position: relative;
+	margin: 2.4% 0% 0.5% 2.5%;
+}
+.logo a:hover {
+	position: relative;
+	top: -3px;
+}
+/*----Slogan----*/
+.slogan {
+    position: relative;
+    margin: -7% auto 22%;
+    text-align: center;
+    animation: slogan ease-in-out 1.5s infinite;
+    z-index: 1;
+}
+  @keyframes slogan {
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: 15px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+/*----Notice----*/
+.notice {
+  margin: 0% 14% 2% 12%;
+color: #450000;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 28px;
+  text-align: justify;
+}
+.notice p {
+  margin-left: 2%;
+}
+.sakura{
+  z-index: 1;
+}
+
+/*----Content----*/
+.content{
+     position: relative;
+    border-radius: 15px;
+    border: 4px solid #430012;
+    margin: -4% auto 2.5%;
+    padding: 3% 5% 1%;
+    width: 70%;
+    /* box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.3); */
+    background: rgb(74 25 0 / 90%);
+}
+
+.content p{
+     font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    text-align: justify;
+    color: #ffb873;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content table{
+  width:100%;
+}
+.content table .text{
+      padding: 5px;
+    text-align: center;
+    color: #ff5b5b;
+    font-weight: bold;
+}
+.content table .sever{
+  padding:5px;
+  width:100%;
+  text-align:center;
+}
+.content table .btn{
+  padding: 0%;
+  width:100%;
+  text-align:center;
+}
+.content table .btn img:hover{
+  filter: brightness(1.05);
+}
+
+select {
+  margin-right: 2%;
+  /*padding: 5px 100px 5px 10px;*/
+  width: 50%;
+  height: 35px;
+  font-family: 微軟正黑體;
+  font-size: 16px;
+  outline: none;
+  /*background: url(../images/select.png) no-repeat 96% 50% #ffffff;   background-size: 15px;*/
+  cursor: pointer;
+  /*appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;*/
+}
+
+/*----Footer----*/
+#footer {
+  position: relative;
+  height: 90px;
+    background: rgb(117 13 0 / 100%);
+  color: #fff;
+  font-size: 12px;
+  z-index: 5;
+}
+#footer table {
+	margin: 0 auto 0 auto;
+}
+#footer table td {
+	padding-right: 8px;
+}
+#footer .about {
+	line-height: 10px;
+}
+#footer table .t {
+	list-style: none;
+	margin-left: -40px;
+	font-size: 11px;
+	line-height: 15px;
+}
