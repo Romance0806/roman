@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>《上古世紀》BattlePass網頁活動</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css"/>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min01.js"></script>
+<script src="js/owl.carousel01.js"></script>
+<script src="js/jquery.simple.timer01.js"></script>
+
+<script src="js/action01.js"></script>
+</head>
+<body>
+<div class="ac">
+  <table>
+    <tr>
+      <td><span>帳號:</span> XXXXX</td>
+      <td><span>伺服器: </span>XXXXX</td>
+      <td><span>角色:</span> XXXXX</td>
+    </tr>
+  </table>
+</div>
+<div class="logo"><a href="https://archeage.playwith.com.tw/main.html"><img src="images/logo.png"></a></div>
+<ul class="game_link">
+  <li><a href="javascript:register();" target="_blank"><img src="images/member.png" title="會員註冊"></a></li>
+  <li><a href="https://archeage.playwith.com.tw/page/download/" target="_blank"><img src="images/download.png" title="遊戲下載"></a></li>
+  <li><a href="https://www.facebook.com/pwarcheage/?fref=ts" target="_blank"><img src="images/facebook.png" title="facebook"></a></li>
+  <li><a href="https://forum.gamer.com.tw/B.php?bsn=17851" target="_blank"><img src="images/bahamut.png" title="巴哈姆特"></a></li>
+</ul>
+<div class="wrap">
+  <div class="slogan"><img src="images/slogan.png"></div>
+  <div class="method">
+    <h2>活動參與方法：<strong>購買特定金額後可參加</strong></h2>
+    <ul>
+      <li>購買方法：信用卡、手機儲值、網頁幣等等</li>
+      <li>價格：500盧布/約八千韓幣/240台幣 (事前預約時400 盧布/約 6千5百元韓幣)約200台幣</li>
+      <li>事前預約者數量: 6,989 名</li>
+    </ul>
+    <h2>網頁配發任務→遊戲內完成任務→網頁領取獎勵</h2>
+    <ul>
+      <li>在LogD發行log，在網頁標示自己的任務進行現況</li>
+      <li>透過網頁購物車功能，可將活動獎勵配給自己的角色</li>
+      <li>網頁上傳送道具到遊戲內時使用give_item API</li>
+    </ul>
+    <h2>使用活動貨幣可跳過一部分任務</h2>
+  <!--  <div class="down"><div class="down_icon"><img src="images/down_icon.png" /></div><img src="images/down.png" /></div>-->
+  </div>
+  <div class="title"><img src="images/tit01.png"></div>
+  <div class="sign">
+    <div class="map">
+      <ul>
+        <li id="task01"><a href="#" title="消耗2000點勞動力"><img src="images/icon002.png"></a></li>
+        <li id="task02"><a href="#" title="完成一般副本"><img src="images/icon002.png"></a></li>
+        <li id="task03"><a href="#" title="使用3次傳送"><img src="images/icon002.png"></a></li>
+        <li id="task04"><a href="#" title="獲得20個古代覺醒卷軸"><img src="images/icon002.png"></a></li>
+        <li id="task05"><a href="#" title="生活點數獲得2500點"><img src="images/icon002.png"></a></li>
+        <li id="task06"><a href="#" title="一般任務區間"><img src="images/icon007.png"></a></li>
+        <li id="task07"><a href="#" title="參予«深淵之襲»"><img src="images/icon003.png"></a></li>
+        <li id="task08"><a href="#" title="完成«幸福生活»系列任務"><img src="images/icon003.png"></a></li>
+        <li id="task09"><a href="#" title="消滅風之君主"><img src="images/icon003.png"></a></li>
+        <li id="task10"><a href="#" title="在煙饗之庭消滅任一BOSS"><img src="images/icon003.png"></a></li>
+        <li id="task11"><a href="#" title="參加黃金平原之戰"><img src="images/icon003.png"></a></li>
+        <li id="task12"><a href="#" title="困難任務區間"><img src="images/icon007.png"></a></li>
+        <li id="task13"><a href="#" title="消滅巨型石像鬼德拉尤達"><img src="images/icon004.png"></a></li>
+        <li id="task14"><a href="#" title="完成任一英雄副本"><img src="images/icon004.png"></a></li>
+        <li id="task15"><a href="#" title="完成所有鯨魚歌灣任務"><img src="images/icon004.png"></a></li>
+        <li id="task16"><a href="#" title="完成每日挑戰任務中的能力者任務"><img src="images/icon004.png"></a></li>
+        <li id="task17"><a href="#" title="向德翡納幽靈船獲幽靈船造成1000傷害"><img src="images/icon004.png"></a></li>
+        <li id="task18"><a href="#" title="獲得10個幸運的古代強化劑"><img src="images/icon002.png"></a></li>
+        <li id="task19"><a href="#" title="完成«古城亡靈危機» 或 «機器大騷亂» 任務"><img src="images/icon002.png"></a></li>
+        <li id="task20"><a href="#" title="參加2次真劍勝負"><img src="images/icon002.png"></a></li>
+        <li id="task21"><a href="#" title="完成«만抓捕曼陀羅草 初級»任務"><img src="images/icon002.png"></a></li>
+        <li id="task22"><a href="#" title="榮譽點數獲得1000點"><img src="images/icon002.png"></a></li>
+        <li id="task23"><a href="#" title="一般任務區間"><img src="images/icon007.png"></a></li>
+        <li id="task24"><a href="#" title="參予徵兆之痕"><img src="images/icon003.png"></a></li>
+        <li id="task25"><a href="#" title="完成埃爾納圖書館每日任務"><img src="images/icon003.png"></a></li>
+        <li id="task26"><a href="#" title="參予海妖之亂"><img src="images/icon003.png"></a></li>
+        <li id="task27"><a href="#" title="貢獻度獲得20點以上"><img src="images/icon003.png"></a></li>
+        <li id="task28"><a href="#" title="參予迷霧戰爭"><img src="images/icon003.png"></a></li>
+        <li id="task29"><a href="#" title="困難任務區間"><img src="images/icon007.png"></a></li>
+        <li id="task30"><a href="#" title="消滅鎮國魔將 尉遲立德"><img src="images/icon004.png"></a></li>
+        <li id="task31"><a href="#" title="完成8000059任務"><img src="images/icon004.png"></a></li>
+        <li id="task32"><a href="#" title="消滅草原聖象 坎"><img src="images/icon004.png"></a></li>
+        <li id="task33"><a href="#" title="完成呼嘯深淵"><img src="images/icon004.png"></a></li>
+        <li id="task34"><a href="#" title="消滅地獄魔蜍 阿伽利塔"><img src="images/icon004.png"></a></li>
+        <li id="task35"><a href="#" title="完成8000056任務"><img src="images/icon002.png"></a></li>
+        <li id="task36"><a href="#" title="回覆1次英雄的動員令"><img src="images/icon002.png"></a></li>
+        <li id="task37"><a href="#" title="獲得20個基里奧斯的勳章"><img src="images/icon002.png"></a></li>
+        <li id="task38"><a href="#" title="把任一貨物拿給交易所4次"><img src="images/icon002.png"></a></li>
+        <li id="task39"><a href="#" title="完成勇士的榮耀任務"><img src="images/icon002.png"></a></li>
+        <li id="task40"><a href="#" title="一般任務區間"><img src="images/icon007.png"></a></li>
+        <li id="task41"><a href="#" title="參予紅露珠之戰"><img src="images/icon003.png"></a></li>
+        <li id="task42"><a href="#" title="在戰場獲勝1次"><img src="images/icon003.png"></a></li>
+        <li id="task43"><a href="#" title="參予盲目之花"><img src="images/icon003.png"></a></li>
+        <li id="task44"><a href="#" title="榮譽點數獲得2000點"><img src="images/icon003.png"></a></li>
+        <li id="task45"><a href="#" title="完成2種馴養系列任務"><img src="images/icon003.png"></a></li>
+        <li id="task46"><a href="#" title="困難任務區間"><img src="images/icon007.png"></a></li>
+        <li id="task47"><a href="#" title="消滅隱居者朗魂"><img src="images/icon004.png"></a></li>
+        <li id="task48"><a href="#" title="消滅10名敵對目標"><img src="images/icon004.png"></a></li>
+        <li id="task49"><a href="#" title="完成英雄副本燃燒之城武器庫"><img src="images/icon004.png"></a></li>
+        <li id="task50"><a href="#" title="參予煙饗論劍台"><img src="images/icon004.png"></a></li>
+        <li id="task51"><a href="#" title="消滅白雪森林守護者"><img src="images/icon004.png"></a></li>
+        <li id="task52"><a href="#" title="開啟原大陸的任一箱子"><img src="images/icon_off.png"></a></li>
+        <li id="task53"><a href="#" title="獲得5個德翡納之星"><img src="images/icon_off.png"></a></li>
+        <li id="task54"><a href="#" title="打開3個未鑒定的黯淡的古代裝備"><img src="images/icon_off.png"></a></li>
+        <li id="task55"><a href="#" title="完成藍鹽商會任務"><img src="images/icon_off.png"></a></li>
+        <li id="task56"><a href="#" title="完成«戰鬥的奧義»任務"><img src="images/icon_off.png"></a></li>
+        <li id="task57"><a href="#" title="一般任務區間"><img src="images/icon007_off.png"></a></li>
+        <li id="task58"><a href="#" title="參予5次戰場"><img src="images/icon_off.png"></a></li>
+        <li id="task59"><a href="#" title="完成藍鹽商會的委託"><img src="images/icon_off.png"></a></li>
+        <li id="task60"><a href="#" title="參予海上戰場"><img src="images/icon_off.png"></a></li>
+        <li id="task61"><a href="#" title="完成全民公敵任務"><img src="images/icon_off.png"></a></li>
+        <li id="task62"><a href="#" title="完成所有每日挑戰任務"><img src="images/icon_off.png"></a></li>
+        <li id="task63"><a href="#" title="困難任務區間"><img src="images/icon007_off.png"></a></li>
+        <li id="task64"><a href="#" title="消滅火之君主"><img src="images/icon_off.png"></a></li>
+        <li id="task65"><a href="#" title="完成任一民兵隊任務"><img src="images/icon_off.png"></a></li>
+        <li id="task66"><a href="#" title="消滅魅惑掠奪者 傑奴特"><img src="images/icon_off.png"></a></li>
+        <li id="task67"><a href="#" title="[英雄副本]毀滅之源"><img src="images/icon_off.png"></a></li>
+        <li id="task68"><a href="#" title="在煙饗之庭消滅伊修達爾"><img src="images/icon_off.png"></a></li>
+        <li id="task69"><a href="#" title="簡單任務區間"><img src="images/icon007.png"></a></li>
+        <li id="task70"><a href="#" title="簡單任務區間"><img src="images/icon007.png"></a></li>
+        <li id="task71"><a href="#" title="簡單任務區間"><img src="images/icon007.png"></a></li>
+        <li id="task72"><a href="#" title="簡單任務區間"><img src="images/icon007_off.png"></a></li>
+        <li id="award01"><a href="#" ><img src="images/award01.png"></a></li>
+        <li id="award02"><a href="#"><img src="images/award01.png"></a></li>
+        <li id="award03"><a href="#"><img src="images/award02.png"></a></li>
+        <li id="award04"><a href="#"><img src="images/award03.png"></a></li>
+      </ul>
+      <div class="level"><a href="#"><img src="images/level.png" /></a></div>
+    </div>
+    <div class="rightbox">
+      <div class="amount">
+        <div class="icon"><img src="images/icon001.png" /></div>
+        <h4>持有橡子數量：<strong>999999999</strong></h4>
+        <div class="point"> <a href="#" class="tooltip"><img src="images/point.png" /><span>
+          <h1>橡子獲取途徑</h1>
+          <h2>遊戲登入時獲得10個橡子</h2>
+          <h2>完成特定每日任務時獲得15個</h2>
+          </span></a> </div>
+      </div>
+      <div class="store"><a href="#"><img src="images/store.png" /></a></div>
+      <div class="icon"><img src="images/icon002.png" /></div>
+      <h5>容易</h5>
+      <div class="icon"><img src="images/icon003.png" /></div>
+      <h5>一般</h5>
+      <div class="icon"><img src="images/icon004.png" /></div>
+      <h5>困難</h5>
+      <br>
+      <div class="icon_ok"><img src="images/icon_ok.png" /></div>
+      <h7>已完成任務</h7>
+      <h6>◆備註</h6>
+      <p>以上3條任務線可同時進行<br>
+        必須完成以上3條任務線才能開啟下方主線</p>
+      <div class="task">
+        <h4>每日任務</h4>
+        <div class="taskcontent">
+          <ul>
+            <li>
+              <div class="complete"><img src="images/icon005.png"/>任務一</div>
+              <div class="complete_content">這是任務內容這是任務內容這是任務內容這是任務內容這是任務內容</div>
+            </li>
+            <li>
+              <div class="undone"><img src="images/icon006.png"/>任務一</div>
+              <div class="undone_content">這是任務內容這是任務內容這是任務內容這是任務內容這是任務內容</div>
+            </li>
+            <li>
+              <div class="undone"><img src="images/icon006.png"/>任務一</div>
+              <div class="undone_content">這是任務內容這是任務內容這是任務內容這是任務內容這是任務內容</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="housepet">
+    <div class="title"><img src="images/tit02.png"></div>
+    <h4>派出寵物幫手狩獵獲得道具</h4>
+    <ul class="housepet_list">
+      <li><a href="#"><img src="images/pet01.png"></a>
+        <div class="lv">Lv.1</div>
+        <div class="upgrade"><a href="#"><img src="images/upgrade.png" /></a></div>
+      </li>
+      <li><a href="#"><img src="images/pet02.png"></a>
+        <div class="lv">Lv.1</div>
+        <div class="upgrade"><a href="#"><img src="images/upgrade.png" /></a></div>
+      </li>
+      <li><a href="#"><img src="images/pet03.png"></a>
+        <div class="lv">Lv.1</div>
+        <div class="upgrade"><a href="#"><img src="images/upgrade.png" /></a></div>
+      </li>
+    </ul>
+    <h4>點擊狩獵按鈕4個小時可獲得道具</h4>
+    <ul class="housepet_button">
+      <li>
+        <div class="list"><a href="#"><img src="images/list.png" /></a></div>
+      </li>
+      <li>
+        <div class="start"><a href="#"><img src="images/start.png" /></a></div>
+         <div class="start_ok"><a href="#"><img src="images/start_ok.png" /></a></div>
+      </li>
+      <li>
+        <div class='container'>
+          <p>距離狩獵結束剩餘 </p>
+            <h1 class='timer' data-minutes-left=0.1></h1>
+     		 <section class='actions'></section>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="remarks"> <img src="images/remark.png">
+    <ol>
+      <li>聖物坐騎技能效果請參閱官網>遊戲指南>交通>聖物坐騎。</li>
+      <li>Playwith保留審核、決定或變更活動之權力，並且依照實際情況予以增刪、修定活動辦法，所有參加的玩家於活動中請配合官方網站的相關公告。</li>
+      <li>若有任何活動相關疑問，請登入官方網站至1:1客服中心洽詢。</li>
+    </ol>
+  </div>
+</div>
+
+<!------簡單任務------>
+<div id="pay" class="reveal-modal">
+  <div class="reveal-modal-bg"></div>
+  <div id="close" class="reveal-modal-bg"></div>
+  <div class="pay"> <img class="box_bg" src="images/box.png">
+    <h1>跳過簡單任務</h1>
+    <p>消耗<span>10</span>橡子</p>
+    <ul class="pay_btn">
+      <li><a href=""><img src="images/btn_cancel.png" alt="取消"></a></li>
+      <li><a href=""><img src="images/btn_ok.png" alt="確定"></a></li>
+    </ul>
+  </div>
+</div>
+<!------簡單任務end------> 
+<!------一般任務------>
+<div id="pay01" class="reveal-modal">
+  <div class="reveal-modal-bg"></div>
+  <div id="close" class="reveal-modal-bg"></div>
+  <div class="pay01"> <img class="box_bg" src="images/box.png">
+    <h1>跳過一般任務</h1>
+    <p>消耗<span>20</span>橡子</p>
+    <ul class="pay_btn">
+      <li><a href=""><img src="images/btn_cancel.png" alt="取消"></a></li>
+      <li><a href=""><img src="images/btn_ok.png" alt="確定"></a></li>
+    </ul>
+  </div>
+</div>
+<!------一般任務end------> 
+
+<!------困難任務------>
+<div id="pay02" class="reveal-modal">
+  <div class="reveal-modal-bg"></div>
+  <div id="close" class="reveal-modal-bg"></div>
+  <div class="pay02"> <img class="box_bg" src="images/box.png">
+    <h1>跳過困難任務</h1>
+    <p>消耗<span>40</span>橡子</p>
+    <ul class="pay_btn">
+      <li><a href=""><img src="images/btn_cancel.png" alt="取消"></a></li>
+      <li><a href=""><img src="images/btn_ok.png" alt="確定"></a></li>
+    </ul>
+  </div>
+</div>
+<!------困難任務end------> 
+
+<!------簡單區間任務------>
+<div id="pay03" class="reveal-modal">
+  <div class="reveal-modal-bg"></div>
+  <div id="close" class="reveal-modal-bg"></div>
+  <div class="pay03"> <img class="box_bg" src="images/box.png">
+    <h1>簡單任務區間開啟</h1>
+    <p>消耗<span>50</span>橡子</p>
+    <ul class="pay_btn">
+      <li><a href=""><img src="images/btn_cancel.png" alt="取消"></a></li>
+      <li><a href=""><img src="images/btn_ok.png" alt="確定"></a></li>
+    </ul>
+  </div>
+</div>
+<!------簡單區間任務end------> 
+
+<!------一般區間任務------>
+<div id="pay04" class="reveal-modal">
+  <div class="reveal-modal-bg"></div>
+  <div id="close" class="reveal-modal-bg"></div>
+  <div class="pay04"> <img class="box_bg" src="images/box.png">
+    <h1>一般任務區間開啟</h1>
+    <p>消耗<span>100</span>橡子</p>
+    <ul class="pay_btn">
+      <li><a href=""><img src="images/btn_cancel.png" alt="取消"></a></li>
+      <li><a href=""><img src="images/btn_ok.png" alt="確定"></a></li>
+    </ul>
+  </div>
+</div>
+<!------一般區間任務end------> 
+
+<!------困難區間任務------>
+<div id="pay05" class="reveal-modal">
+  <div class="reveal-modal-bg"></div>
+  <div id="close" class="reveal-modal-bg"></div>
+  <div class="pay05"> <img class="box_bg" src="images/box.png">
+    <h1>困難任務區間開啟</h1>
+    <p>消耗<span>150</span>橡子</p>
+    <ul class="pay_btn">
+      <li><a href=""><img src="images/btn_cancel.png" alt="取消"></a></li>
+      <li><a href=""><img src="images/btn_ok.png" alt="確定"></a></li>
+    </ul>
+  </div>
+</div>
+<!------一般區間任務end------> 
+<!------關卡任務列表------>
+<div id="pay06" class="reveal-modal">
+  <div class="reveal-modal-bg"></div>
+  <div id="close" class="reveal-modal-bg"></div>
+  <div class="pay06">
+    <div class="inner mCustomScrollbar">
+      <table cellspacing="0" cellpadding="0">
+        <col width="113">
+        <col width="298">
+        <col width="190">
+        <col width="290">
+        <tr>
+          <td width="113" bgcolor="#F7D0AE">　</td>
+          <td width="298" bgcolor="#76BBE4">任務：簡易</td>
+          <td width="190" bgcolor="#FAC056">任務：普通</td>
+          <td width="290" bgcolor="#F95A48">任務：困難</td>
+        </tr>
+        <tr>
+          <td width="113" rowspan="5" bgcolor="#F7D0AE">第一關卡任務</td>
+          <td width="298" bgcolor="#B7E6F4">消耗2000點勞動力</td>
+          <td width="190" bgcolor="#FEE09A">參予«深淵之襲»</td>
+          <td width="290" bgcolor="#FA8072">消滅巨型石像鬼德拉尤達</td>
+        </tr>
+        <tr>
+          <td width="298" bgcolor="#B7E6F4">完成一般副本</td>
+          <td width="190" bgcolor="#FEE09A">完成«幸福生活»系列任務</td>
+          <td width="290" bgcolor="#FA8072">完成任一英雄副本</td>
+        </tr>
+        <tr>
+          <td width="298" bgcolor="#B7E6F4">使用3次傳送</td>
+          <td width="190" bgcolor="#FEE09A">消滅風之君主</td>
+          <td width="290" bgcolor="#FA8072">完成所有鯨魚歌灣任務</td>
+        </tr>
+        <tr>
+          <td width="298" bgcolor="#B7E6F4">獲得20個古代覺醒卷軸</td>
+          <td width="190" bgcolor="#FEE09A">在煙饗之庭消滅任一BOSS</td>
+          <td width="290" bgcolor="#FA8072">完成每日挑戰任務中的能力者任務</td>
+        </tr>
+        <tr>
+          <td width="298" bgcolor="#B7E6F4">生活點數獲得2500點</td>
+          <td width="190" bgcolor="#FEE09A">參加黃金平原之戰</td>
+          <td width="290" bgcolor="#FA8072	">向德翡納幽靈船獲幽靈船造成1000傷害</td>
+        </tr>
+        <tr>
+          <td rowspan="5" width="113" bgcolor="#F7D0AE">第二關卡任務</td>
+          <td width="298" bgcolor="#B7E6F4">獲得10個幸運的古代強化劑</td>
+          <td width="190" bgcolor="#FEE09A">參予徵兆之痕</td>
+          <td width="290" bgcolor="#FA8072">消滅鎮國魔將尉遲立德</td>
+        </tr>
+        <tr>
+          <td width="298" bgcolor="#B7E6F4">完成«古城亡靈危機» 或 «機器大騷亂» 任務</td>
+          <td width="190" bgcolor="#FEE09A">完成埃爾納圖書館每日任務</td>
+          <td width="290" bgcolor="#FA8072">完成8000059任務</td>
+        </tr>
+        <tr>
+          <td width="298" bgcolor="#B7E6F4">參加2次真劍勝負</td>
+          <td width="190" bgcolor="#FEE09A">參予海妖之亂</td>
+          <td width="290" bgcolor="#FA8072">消滅草原聖象坎</td>
+        </tr>
+        <tr>
+          <td width="298" bgcolor="#B7E6F4">完成«抓捕曼陀羅草初級»任務</td>
+          <td width="190" bgcolor="#FEE09A">貢獻度獲得20點以上</td>
+          <td width="290" bgcolor="#FA8072">完成呼嘯深淵</td>
+        </tr>
+        <tr>
+          <td width="298" bgcolor="#B7E6F4">榮譽點數獲得1000點</td>
+          <td width="190" bgcolor="#FEE09A">參予迷霧戰爭</td>
+          <td width="290" bgcolor="#FA8072">消滅地獄魔蜍阿伽利塔</td>
+        </tr>
+        <tr>
+          <td rowspan="5" width="113" bgcolor="#F7D0AE">第三關卡任務</td>
+          <td width="298" bgcolor="#B7E6F4">完成8000056任務</td>
+          <td width="190" bgcolor="#FEE09A">參予紅露珠之戰</td>
+          <td width="290" bgcolor="#FA8072">消滅隱居者朗魂</td>
+        </tr>
+        <tr>
+          <td width="298" bgcolor="#B7E6F4">回覆1次英雄的動員令</td>
+          <td width="190" bgcolor="#FEE09A">在戰場獲勝1次</td>
+          <td width="290" bgcolor="#FA8072">消滅10名敵對目標</td>
+        </tr>
+        <tr>
+          <td width="298" bgcolor="#B7E6F4">獲得20個基里奧斯的勳章</td>
+          <td width="190" bgcolor="#FEE09A">參予盲目之花</td>
+          <td width="290" bgcolor="#FA8072">完成英雄副本燃燒之城武器庫</td>
+        </tr>
+        <tr>
+          <td width="298" bgcolor="#B7E6F4">把任一貨物拿給交易所4次</td>
+          <td width="190" bgcolor="#FEE09A">榮譽點數獲得2000點</td>
+          <td width="290" bgcolor="#FA8072">參予煙饗論劍台</td>
+        </tr>
+        <tr>
+          <td width="298" bgcolor="#B7E6F4">完成勇士的榮耀任務</td>
+          <td width="190" bgcolor="#FEE09A">完成2種馴養系列任務</td>
+          <td width="290" bgcolor="#FA8072">消滅白雪森林守護者</td>
+        </tr>
+        <tr>
+          <td rowspan="5" width="113" bgcolor="#F7D0AE">第四關卡任務</td>
+          <td width="298" bgcolor="#B7E6F4">開啟原大陸的任一箱子</td>
+          <td width="190" bgcolor="#FEE09A">參予5次戰場</td>
+          <td width="290" bgcolor="#FA8072">消滅火之君主</td>
+        </tr>
+        <tr>
+          <td width="298" bgcolor="#B7E6F4">獲得5個德翡納之星</td>
+          <td width="190" bgcolor="#FEE09A">完成藍鹽商會的委託</td>
+          <td width="290" bgcolor="#FA8072">完成任一民兵隊任務</td>
+        </tr>
+        <tr>
+          <td width="298" bgcolor="#B7E6F4">打開3個未鑒定的黯淡的古代裝備</td>
+          <td width="190" bgcolor="#FEE09A">參予海上戰場</td>
+          <td width="290" bgcolor="#FA8072">消滅魅惑掠奪者傑奴特</td>
+        </tr>
+        <tr>
+          <td width="298" bgcolor="#B7E6F4">完成藍鹽商會任務</td>
+          <td width="190" bgcolor="#FEE09A">完成全民公敵任務</td>
+          <td width="290" bgcolor="#FA8072">[英雄副本]毀滅之源</td>
+        </tr>
+        <tr>
+          <td width="298" bgcolor="#B7E6F4">完成«戰鬥的奧義»任務</td>
+          <td width="190" bgcolor="#FEE09A">完成所有每日挑戰任務</td>
+          <td width="290" bgcolor="#FA8072">在煙饗之庭消滅伊修達爾</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<!------關卡任務列表end------> 
+<!------狩獵轉蛋掉落清單------>
+<div id="pay07" class="reveal-modal">
+  <div class="reveal-modal-bg"></div>
+  <div id="close" class="reveal-modal-bg"></div>
+  <div class="pay07">
+    <div class="inner mCustomScrollbar">
+      <table width="100%">
+        <tr>
+          <td>NO</td>
+          <td>道具</td>
+          <td>價值</td>
+          <td>綁定</td>
+          <td>機率</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>銅鑰匙</td>
+          <td>30</td>
+          <td>No</td>
+          <td>10.91%</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>金鑰匙</td>
+          <td>30</td>
+          <td>No</td>
+          <td>10.91%</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>銀鑰匙</td>
+          <td>30</td>
+          <td>No</td>
+          <td>10.91%</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>新月碧石晶</td>
+          <td>30</td>
+          <td>No</td>
+          <td>10.91%</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>新月黃石結晶</td>
+          <td>30</td>
+          <td>No</td>
+          <td>10.91%</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>新月青石結晶</td>
+          <td>30</td>
+          <td>No</td>
+          <td>10.91%</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>新月赤石晶</td>
+          <td>30</td>
+          <td>No</td>
+          <td>10.91%</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>狩獵秘藥（綁定）</td>
+          <td>55</td>
+          <td>No</td>
+          <td>10.34%</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>通用的機械改造升級卷</td>
+          <td>100</td>
+          <td>No</td>
+          <td>5.74%</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>紅色祝福石（綁定）</td>
+          <td>550</td>
+          <td>Yes</td>
+          <td>0.57%</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>始終如一，貓頭鷹郵差</td>
+          <td>140</td>
+          <td>No</td>
+          <td>4.10%</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>建築物傢俱擴充卷</td>
+          <td>200</td>
+          <td>No</td>
+          <td>2.87%</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<!------狩獵轉蛋掉落清單end------>
+<!------開始狩獵------>
+<div id="pay08" class="reveal-modal">
+  <div class="reveal-modal-bg"></div>
+  <div id="close" class="reveal-modal-bg"></div>
+  <div class="pay08"> <img class="box_bg" src="images/box.png">
+    <h1>開始狩獵</h1>
+    <p>消耗<span>15</span>橡子</p>
+    <ul class="pay_btn">
+      <li><a href="#"><img src="images/btn_cancel.png" alt="取消"></a></li>
+      <li class="btn_ok"><a href="#"><img src="images/btn_ok.png" alt="確定"></a></li>
+    </ul>
+  </div>
+</div>
+<!------開始狩獵end------> 
+<div id="footer">
+  <table>
+    <tr>
+      <td class="company"><img class="pw" src="images/footer/playwith.png" alt="playwith"> <img class="xl" src="images/footer/xlgames.png" alt="xlgames"></td>
+      <td class="copyright"><p>COPYRIGHT © XLGAMES INC. ALL RIGHTS RESERVED. PLAYWITH TAIWAN CO. ,Ltd PRESENTS.</p>
+        <p>建議玩家使用 IE / Chrome 瀏覽器，IE版本在 IE10 以下的使用者，可將 IE 瀏覽器升級至 IE10 版本。</p></td>
+      <td><img src="images/footer/15r.png" alt="15"></td>
+      <td><ul class="grading">
+          <li>本遊戲部分內容涉及打鬥攻擊等</li>
+          <li>請注意遊玩時間避免沉迷於遊戲</li>
+          <li>本遊戲部分內容須另行支付費用</li>
+        </ul></td>
+    </tr>
+  </table>
+</div>
+<div id="footer_sp">
+  <div class="px"> <img style="margin: 0px 10px -12px 0px" src="images/footer/playwith.png" alt="playwith"> <img src="images/footer/xlgames.png" alt="xlgames"> </div>
+  <p>COPYRIGHT © XLGAMES INC. ALL RIGHTS RESERVED. PLAYWITH TAIWAN CO. ,Ltd PRESENTS.<br>
+    建議玩家使用 IE / Chrome 瀏覽器，IE版本在 IE10 以下的使用者，可將 IE 瀏覽器升級至 IE10 版本。</p>
+  <div class="grade"> <img src="images/footer/15r.png" alt="15">
+    <ul>
+      <li>本遊戲部分內容涉及打鬥攻擊等</li>
+      <li>請注意遊玩時間避免沉迷於遊戲</li>
+      <li>本遊戲部分內容須另行支付費用</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

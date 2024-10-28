@@ -1,0 +1,127 @@
+﻿body {
+	background: url(../images/bg_select.jpg) no-repeat center top #f3b75e;
+	background-size: cover;
+}
+img {
+	max-width: 100%;
+}
+/*----Slogan----*/
+.slogan {
+	z-index: 9;
+	position: relative;
+	animation: float ease-in-out 1.5s infinite;
+	-webkit-animation: float ease-in-out 1.5s infinite;
+	-moz-animation: float ease-in-out 1.5s infinite;
+	margin-top: 16.4%;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: 7%;
+}
+/*----Logo----*/
+.logo {
+	position: absolute;
+	margin: -10% 1%;
+	z-index: 99;
+}
+
+/*----Content----*/	
+.box {
+	width: 90%;
+	max-width: 700px;
+	margin: 3% auto;
+	line-height: 25px;
+	color: #461f0d;
+	position: relative;
+	margin-left: 12%;
+	z-index: 99;
+}
+.form_bg {
+}
+.form {
+	width: 80%;
+	max-width: 218px;
+	position: absolute;
+	bottom: 45%;
+    left: 28%;
+	right: 0;
+	margin: auto;
+	text-align: left;
+}
+select {
+	width: 156%;
+	border: 2px solid #ffe8c0;
+	font-size: 15px;
+	padding: 2px 5px;
+}
+.form td {
+	height: 40px;
+	font-weight: bold;
+	font-size: 17px;
+	color: #ffb966;
+}
+.btn_submit {
+	width: 30%;
+	max-width: 210px;
+	bottom: 24%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	position: absolute;
+}
+
+@media screen and (max-width: 1140px) {
+.char03 {
+	display: none;
+	}
+.char04 {
+	width: 50%;
+	right: -13%;
+	bottom: 45%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+
+}
+@media screen and (max-width: 640px) {
+.form {
+    width: 65%;
+    bottom: 46%;
+}
+.form td {
+    height: 30px;
+}
+.btn_submit {
+    bottom: 21%;
+}
+}
+.shadow {
+  background: url(../images/shadow.png) no-repeat center top;
+  background-size: cover;
+  z-index: 2;
+}
+.clouds {
+	display: none\9;
+	position: fixed;
+	left: 0;
+	width: 100%;
+	background: transparent url(../images/clouds.png);
+	background-size: cover;
+	animation: smokebg 60s infinite alternate;
+	height: 113%;
+	margin-top: -40%;
+}
+@keyframes smokebg { 
+  25% { transform: scale(1.5); }
+  50% { transform: scale(2); opacity: 0.8; }
+  75% { transform: scale(2.5); opacity: 0.5; }
+  100% { transform: scale(3); opacity: 0; } 
+}
+#rainy, #snow{ 
+     position: absolute;
+    top: -31%;
+    left: -25%;
+    width: 144%;
+    height: 132%;
+    z-index: 1;
+}
