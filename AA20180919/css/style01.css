@@ -1,0 +1,82 @@
+body {
+	background: url(../images/index.jpg) no-repeat fixed #000;
+	text-align: center;
+	font-family: Microsoft JhengHei;
+}
+#content01 {
+	padding-bottom: 20px;
+}
+p {
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: "Microsoft JhengHei";
+	margin: 0;
+}
+p.note {
+    font-size: 15px;
+    color: #fff9b1;
+    font-weight: normal;
+}
+#content01 table tr td select {
+	width: 200px;
+	margin: 10px 0;
+}
+table {
+	width: 85%;
+	color: #FFF;
+	font-size: 16px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	margin: 0 auto;
+}
+table.info {
+	background-color: rgba(101, 64, 0, 0.6);
+	border: 1px solid #9a5c00;
+}
+table.table_02 tr {
+	background-color: rgb(175, 111, 0,0.5);
+}
+table.table_02 tr td {
+	height: 40px;
+	padding-top: 5px;
+	padding-right: 0;
+	padding-bottom: 5px;
+	padding-left: 0;
+}
+table.table_02 tr.last-tr {
+    background-color: transparent;
+    height: 65px;
+}
+table.table_02 tr:first-child {
+	height: 25px;
+	background-color: rgba(193, 134, 25, 0.8);
+}
+.table_02 tr td a img:hover {
+	filter: brightness(1.1)drop-shadow(0px 0px 5px rgba(0, 0, 0, 0));
+	-webkit-filter: brightness(1.1)drop-shadow(0px 0px 5px rgba(0, 0, 0, 0));
+	-moz-filter: brightness(1.1)drop-shadow(0px 0px 5px rgba(0, 0, 0, 0));
+}
+.btn {
+	background: url(images/btn.png) no-repeat;
+	width: 300px;
+	height: 80px;
+	margin: 0 auto;
+	display: block;
+	transition-duration: 1.5s;
+	-webkit-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
+}
+.btn:hover {
+	margin-top: -5px;
+}
+h1 {
+	color: #ffa46d;
+	font-size: 36px;
+}
+
+h3 {
+	color: #FFF;
+}
