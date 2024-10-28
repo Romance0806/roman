@@ -23,9 +23,7 @@
   } else {
     // Using as script tag
     //
-    // For example:
-    //   <script src="jquery.simple.timer.js"></script>
-    factory(jQuery, window, document);
+
   }
 }(function($, window, document, undefined) {
 
