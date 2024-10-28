@@ -1,24 +1,4 @@
-﻿$(document).ready(function() {
-	$('#pay').hide();
-	
-              var owl = $('.calendar .owl-carousel');
-              owl.owlCarousel({
-                items: 1,
-                loop: false,
-                margin: 0,
-				dots: false,
-				nav: true,
-				navText: ["<img src='images/btn_prev.png'>","<img src='images/btn_next.png'>"]
-              });
-	$('#task01 a, #task02 a, #task03 a, #task04 a, #task05 a, #task18 a, #task19 a, #task20 a, #task21 a, #task22 a, #task35 a, #task36 a, #task37 a, #task38 a, #task39 a, #task52 a, #task53 a, #task54 a, #task55 a, #task56 a').click(function() {
-		$('#pay').fadeIn();
-		});
-	
-	$("#close, .reveal-modal-bg").click(function() {
-		$('#pay').fadeOut();
-	});
-	});
-	
+
 	
 	
 	
