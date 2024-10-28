@@ -1,0 +1,133 @@
+﻿@font-face {
+	font-family: 'Noto Sans TC';
+	font-style: normal;
+	font-weight: 500;
+	src: url(../font/NotoSansTC-Medium.woff2) format('woff2'), url(../font/NotoSansTC-Medium.woff) format('woff'), url(../font/NotoSansTC-Medium.otf) format('opentype');
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+a {
+	width: 100%;
+	display: block;
+}
+/*----Wrap----*/
+.wrap {
+	max-width: 1200px;
+	position: relative;
+	margin: 0px auto;
+}
+/*----Logo----*/
+.logo {
+	position: absolute;
+	margin: -0% 1%;
+	z-index: 99;
+}
+/*----Game_Link----*/
+.game_link {
+	width: 30%;
+	max-width: 189px;
+	position: absolute;
+	right: 2%;
+	top: 10px;
+	z-index: 20;
+}
+.game_link li {
+	width: 19%;
+	list-style-type: none;
+	text-align: center;
+	display: inline-block;
+	margin-left: 3px;
+}
+/*----Slogan----*/
+.slogan {
+	width: 80%;
+	max-width: 820px;
+	position: relative;
+	animation: float ease-in-out 1.5s infinite;
+	-webkit-animation: float ease-in-out 1.5s infinite;
+	-moz-animation: float ease-in-out 1.5s infinite;
+}
+@-webkit-keyframes float {
+ 0% {
+ -webkit-transform: translateY(0);
+ transform: translateY(0);
+}
+ 50% {
+ -webkit-transform: translateY(1em);
+ transform: translateY(1em);
+}
+ 100% {
+ -webkit-transform: translateY(0);
+ transform: translateY(0);
+}
+}
+@-moz-keyframes float {
+ 0% {
+ -webkit-transform: translateY(0);
+ transform: translateY(0);
+}
+ 50% {
+ -webkit-transform: translateY(1em);
+ transform: translateY(1em);
+}
+ 100% {
+ -webkit-transform: translateY(0);
+ transform: translateY(0);
+}
+}
+/*----Char----*/
+.char {
+	position: absolute;
+}
+/*----Footer----*/
+#footer {
+	position: relative;
+	width: 100%;
+	color: #fff;
+	background: #461f0d;
+	padding: 15px 0;
+	font-size: 12px;
+	z-index: 2;
+}
+#footer table {
+	margin: 0 auto;
+}
+#footer table td {
+	padding-right: 8px;
+}
+.pw {
+	margin-right: 10px;
+	margin-bottom: -12px;
+}
+.xl {
+	margin-right: 10px;
+}
+#footer .copyright {
+	padding-right: 20px;
+	line-height: 20px;
+}
+#footer .grading {
+	list-style: none;
+	font-size: 10px;
+	line-height: 18px;
+}
+#footer_sp {
+	display: none;
+}
+
+@media screen and (max-width: 1660px) {
+	html, body {
+	width: 100%;
+	min-width: 1200px;
+	overflow-x: hidden;
+	background-image: url(../images/bg_s.jpg);		
+	}	
+}
+
+
