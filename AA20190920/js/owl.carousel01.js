@@ -1687,15 +1687,7 @@
 		});
 	};
 
-	/**
-	 * The constructor for the jQuery Plugin
-	 * @public
-	 */
-	$.fn.owlCarousel.Constructor = Owl;
-
-})(window.Zepto || window.jQuery, window, document);
-
-/**
+	
  * AutoRefresh Plugin
  * @version 2.1.0
  * @author Artus Kolanowski
