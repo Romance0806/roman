@@ -1,5 +1,5 @@
 /* == jquery mousewheel plugin == Version: 3.1.12, License: MIT License (MIT) */ ! function(a) {
-    "function" == typeof define && define.amd ? define(["jquery"], a) : "object" == typeof exports ? module.exports = a : a(jQuery)
+
 }(function(a) {
     function b(b) {
         var g = b || window.event,
