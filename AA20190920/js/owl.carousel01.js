@@ -1657,8 +1657,7 @@
 	 * @todo Navigation plugin `next` and `prev`
 	 * @public
 	 */
-	$.fn.owlCarousel = function(option) {
-		var args = Array.prototype.slice.call(arguments, 1);
+	
 
 		return this.each(function() {
 			var $this = $(this),
