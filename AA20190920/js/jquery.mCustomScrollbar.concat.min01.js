@@ -1,6 +1,4 @@
-/* == jquery mousewheel plugin == Version: 3.1.12, License: MIT License (MIT) */ ! function(a) {
-
-}(function(a) {
+(function(a) {
     function b(b) {
         var g = b || window.event,
             h = i.call(arguments, 1),
