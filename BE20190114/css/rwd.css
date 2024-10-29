@@ -1,0 +1,99 @@
+﻿@media screen and (max-width: 1680px) {
+#section0 .slogan {
+	padding-top: 15%;
+}
+}
+
+@media screen and (max-width: 1600px) {
+#section0 .slogan {
+	width: 30%;
+	padding-top: 11%;
+}
+	.leftChar {
+    width: 38%;
+	}
+}
+@media screen and (max-width: 1366px) {
+.leftChar {
+    width: 39%;
+	}
+}
+@media screen and (max-width: 1200px) {
+.cloud_front {
+	left: -20%;
+}
+#section0 .slogan {
+    width: 39%;
+    padding-top: 20%;
+}
+.rightChar {
+	top: 5%;
+	right: 6%;
+}
+.down {
+    width: 20%;
+}
+}
+@media screen and (max-width: 1100px) {
+#section0 .slogan {
+    width: 60%;
+    padding-top: 47%;
+}
+.leftChar {
+	top: 9%;
+	left: -3%;
+	width: 58%;
+}
+.rightChar {
+    width: 75%;
+    top: 8%;
+    right: 0%;
+ }
+.char02 {
+    margin-left: 45%;
+}
+.char03 {
+    margin-left: 25%;
+ }
+.char04 {
+    margin-left: 38%;
+}
+.down {
+    width: 42%;
+    margin: 2% auto;
+}
+.dialog {
+    width: 38%;
+    margin-left: 57%;
+}
+.Precautions {
+    width: 15%;
+    left: 0;
+    right: 0;
+    top: 46%;
+    margin: auto;
+}
+.heart li {
+    margin: 3% 0.3%;
+}
+.cloud {
+    bottom: -2%;
+}
+}
+@media screen and (max-width: 640px) {
+#section0 .slogan {
+    width: 80%;
+    padding-top: 90%;
+}
+.leftChar {
+    top: 6%;
+    left: 1%;
+    width: 64%;
+}
+.rightChar {
+    width: 98%;
+    top: 14%;
+    right: 0%;
+}
+}
+
