@@ -1,0 +1,65 @@
+@charset utf-8;
+body, h1, h2, h3, h4, h5, h6, p, blockquote, th, td, div, dl, dt, dd, ul, ol, li, pre, code, form, fieldset, legend, input, button, textarea {
+	margin: 0;
+	padding: 0
+}
+body, td, th {
+	font-family: "微軟正黑體", serif, sans-serif, cursive, fantasy, monospace;
+	font-size: 100%;
+	line-height: 1
+}
+h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: 400
+}
+img, fieldset {
+	border: 0
+}
+h3 {
+	color: #ffdd60;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 1%;
+    text-align: center;
+    margin-top: 3%;
+    line-height: 30px;
+    text-shadow: -7px 4px 15px #000000, -7px 4px 15px #000000, -7px 4px 15px #000000, -7px 4px 15px #000000, -7px 4px 15px #000000;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+caption, th {
+	text-align: left
+}
+a, ins {
+	text-decoration: none
+}
+input, button, textarea, select, optgroup, option {
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit
+	
+}
+address, caption, cite, code, dfn, em, strong, th, var, optgroup {
+	font-style: normal;
+	font-weight: 400
+}
+abbr {
+	border: 0;
+	font-variant: normal
+}
+sup, sub {
+	font-size: 100%;
+	vertical-align: baseline
+}
+blockquote, q {
+	quotes: none
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: ""
+}
+code, kbd, samp {
+	font-size: 100%
+}

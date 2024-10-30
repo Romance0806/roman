@@ -1,0 +1,101 @@
+﻿* {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+a {
+	width: 100%;
+	display: block;
+}
+/*----Wrap----*/
+.wrap {
+	max-width: 1200px;
+	margin: 0px auto;
+	overflow: hidden;
+	z-index: 5;
+}
+/*----Logo----*/
+.logo {
+	position: absolute;
+    margin: 1.5% 40%;
+    z-index: 99;
+    width: 19%;
+}
+/*----Slogan----*/
+.slogan {
+	width: 80%;
+	max-width: 740px;
+	position: relative;
+	animation: float ease-in-out 1.5s infinite;
+	-webkit-animation: float ease-in-out 1.5s infinite;
+	-moz-animation: float ease-in-out 1.5s infinite;
+}
+@-webkit-keyframes float {
+ 0% {
+ -webkit-transform: translateY(0);
+ transform: translateY(0);
+}
+ 50% {
+ -webkit-transform: translateY(1em);
+ transform: translateY(1em);
+}
+ 100% {
+ -webkit-transform: translateY(0);
+ transform: translateY(0);
+}
+}
+@-moz-keyframes float {
+ 0% {
+ -webkit-transform: translateY(0);
+ transform: translateY(0);
+}
+ 50% {
+ -webkit-transform: translateY(1em);
+ transform: translateY(1em);
+}
+ 100% {
+ -webkit-transform: translateY(0);
+ transform: translateY(0);
+}
+}
+/*----Char----*/
+.char {
+	position: absolute;
+}
+/*----Footer----*/
+#footer {
+	position: relative;
+	width: 100%;
+	color: #fff;
+	background: #642f39;
+	padding: 15px 0;
+	font-size: 12px;
+	z-index: 2;
+}
+#footer table {
+	margin: 0 auto;
+}
+#footer table td {
+	padding-right: 8px;
+}
+.pw {
+	margin-right: 10px;
+	margin-bottom: -12px;
+}
+.xl {
+	margin-right: 10px;
+}
+#footer .copyright {
+	padding-right: 20px;
+	line-height: 20px;
+}
+#footer .grading {
+	list-style: none;
+	font-size: 10px;
+	line-height: 18px;
+}
+
+

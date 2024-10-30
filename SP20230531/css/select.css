@@ -1,0 +1,120 @@
+﻿body {
+    background: url(../images/bg_select.jpg) no-repeat center top #fedde6;
+    background-size: cover;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*----Slogan----*/
+.slogan {
+    margin: 0 auto;
+    z-index: 9;
+    position: relative;
+    animation: float ease-in-out 1.5s infinite;
+    -webkit-animation: float ease-in-out 1.5s infinite;
+    -moz-animation: float ease-in-out 1.5s infinite;
+}
+
+/*----Char----*/
+.char03 {
+    left: -10%;
+    bottom: -2%;
+}
+
+.char04 {
+    right: -26%;
+    bottom: -13%;
+    max-height: 730px;
+    overflow-y: hidden;
+}
+
+/*----Content----*/
+.board {
+    background: url("../images/box_bg.jpg") repeat;
+    border-radius: 30px;
+    width: 55%;
+    margin: 3% auto;
+    padding: 1% 2% 2%;
+    position: relative;
+    text-align: center;
+    box-shadow: 4px 4px #5d2d18;
+    border: 4px solid #5d2d18;
+}
+
+.form_bg {
+}
+
+.form table {
+    width: 80%;
+    max-width: 320px;
+    margin: 6% auto 0;
+    position: relative;
+    text-align: left;
+}
+
+select {
+    width: 100%;
+    border: 2px solid #ffe8c0;
+    font-size: 15px;
+    padding: 2px 5px;
+}
+
+.form {
+    background: #FFF;
+    width: 100%;
+    min-height: 280px;
+    border-radius: 30px;
+    padding: 10px 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+.form table td {
+    height: 40px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.btn_submit {
+    width: 30%;
+    max-width: 210px;
+    margin: 20px auto 0;
+    position: relative;
+}
+.txt {
+    margin-top: 20px;
+    color: #ff2d5a;
+    font-weight: bold;
+    font-size: 17px;
+}
+@media screen and (max-width: 1140px) {
+    .char03 {
+        display: none;
+    }
+
+    .char04 {
+        width: 50%;
+        right: -13%;
+        bottom: 45%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+}
+
+@media screen and (max-width: 640px) {
+    .form table {
+        width: 65%;
+        bottom: 46%;
+    }
+
+    .form table td {
+        height: 30px;
+    }
+
+    .btn_submit {
+        bottom: 21%;
+    }
+}

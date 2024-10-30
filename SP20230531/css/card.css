@@ -1,0 +1,236 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #17254a;
+}
+ul {
+	list-style-type: none;
+}
+input[type="checkbox"] {
+  display: none;
+}
+label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+label::before {
+  content: "";
+}
+
+label img {
+  width: 210px;
+  height: 300px;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+:checked+label {
+  border: 0;
+}
+/*------------CARD-------------*/
+.game {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+}
+.card_area li {
+    color: #FFF;
+    list-style-type: none;
+    width: 210px;
+    height: 340px;
+    display: inline-block;
+    transition: all 0.5s;
+    margin: 15px 10px;
+    cursor: pointer;
+    z-index: 0;
+    position: relative;
+}
+.card_area li:hover {
+	-webkit-filter: brightness(1.2);
+	-webkit-box-shadow: inset 0px 0px 8px 5px #DC71FF, 0px 0px 20px 3px #DC71FF, 0px 0px 8px 0px rgba(0,0,0,0);
+	box-shadow: inset 0px 0px 8px 5px #DC71FF, 0px 0px 20px 3px #DC71FF, 0px 0px 8px 0px rgba(0,0,0,0);
+	border-radius: 20px;
+}
+.card_area li.flipped img {
+    cursor: default;
+    z-index: 9;
+    -webkit-animation-name: flipped;
+    animation-name: flipped;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transition: all 1s cubic-bezier(0.19, 0.64, 0.89, 0.32);
+}
+
+.card_area li.on {
+	-webkit-box-shadow: inset 0px 0px 8px 5px #DC71FF,0px 0px 20px 3px#DC71FF,0px 0px 8px 0px rgba(0,0,0,0);
+	box-shadow: inset 0px 0px 8px 5px #DC71FF,0px 0px 20px 3px #DC71FF,0px 0px 8px 0px rgba(0,0,0,0);
+	transform: scale(1.05);
+	border-radius: 16px;
+}
+.card_area li.flipped {
+	transform: scale(1.05);
+	z-index: 99;
+}
+/*----slot----*/
+.slot_box {
+  position: absolute;
+  width: 210px;
+  height: 40px;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+}
+.slot_frame{
+  position: relative;
+  width: 210px;
+  height: 40px;
+  text-align: center;
+  transform-origin: center center;
+  background: url(../images/slot_frame.png) center;
+  background-size: cover;
+  overflow: hidden;
+  transition: transform .5s;
+  transition-delay: .1s;
+}
+.slot_txt {
+  width: 210px;
+  line-height: 40px;
+  font-size: 25px;
+  margin: 0 auto;
+  position: relative;
+}
+.slot_txt img {
+    width: 60%;
+    margin-top: 7px;
+}
+.slotMachineNoTransition {
+  transition: none !important;
+}
+.slotMachineBlurFast {
+  filter: blur(5px);
+}
+.slotMachineBlurMedium {
+  filter: blur(3px);
+}
+.slotMachineBlurSlow {
+  filter: blur(2px);
+}
+.slotMachineBlurTurtle {
+  filter: blur(1px);
+}
+
+.card_light {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-top: 12px;
+  margin-left: 1px;
+  left: -70px;
+  top: -35px;
+  width: 350px;
+  height: 350px;
+  background: url(../images/card_light.png) no-repeat center;
+  background-size: contain;
+  transition: 0.5s;
+  opacity: 0;
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+.shiny {
+  opacity: 1;
+}
+.card_area li.flipped.shine {
+	animation: shine 1s infinite alternate;
+	border-radius: 10px;
+}
+.card_area li.flipped.glow {
+    -webkit-filter: brightness(1.1);
+    -webkit-box-shadow: inset 0px 0px 8px 5px rgb(299 133 189 / 60%), 0px 0px 5px 5px rgb(99 133 189 / 60%), 0px 0px 8px 0px rgb(99 133 189 / 0%);
+    box-shadow: inset 0px 0px 8px 5px rgb(99 133 189 / 78%), 0px 0px 5px 5px rgb(99 133 189 / 78%), 0px 0px 8px 0px rgb(99 133 189 / 0%);
+	border-radius: 10px;
+}
+.card_area li.flipped.darken  {
+    -webkit-filter: brightness(.5);
+    -webkit-box-shadow: inset 0px 0px 8px 5px rgb(0 0 0 / 60%), 0px 0px 5px 5px rgb(0 0 0 / 40%), 0px 0px 8px 0px rgb(0 0 0 / 0%);
+    box-shadow: inset 0px 0px 8px 5px rgb(0 0 0 / 60%), 0px 0px 5px 5px rgb(0 0 0 / 40%), 0px 0px 8px 0px rgb(0 0 0 / 0%);
+}
+.button {
+	width: 1200px;
+    margin: 10px auto;
+    text-align: center;
+    position: relative;
+    margin-left: -22%;
+}
+button.btnStart {
+       background-image: url(../images/btn05.png);
+    width: 244px;
+    height: 95px;
+    border-radius: 13px;
+    color: #fdf380;
+    font-size: 21px;
+    font-weight: bold;
+}
+button.btnStartAll {
+         background-image: url(../images/btn05.png);
+    width: 244px;
+    height: 95px;
+    border-radius: 13px;
+    color: #fdf380;
+    font-size: 21px;
+    font-weight: bold;
+}
+strong {
+        color: #ffca84;
+}
+/* animation */
+@keyframes shine {
+  from {
+    box-shadow: 0 0 8px -2px #fff7a1e3;
+  }
+  to {
+    box-shadow: 0 0 8px 2px #fff7a1e3;
+  }
+}
+
+@-webkit-keyframes flipped {
+    0% {
+        left: auto;
+        -webkit-transform: rotateY(0deg);
+        opacity: 0;
+    }
+
+    50% {
+        left: 0;
+        -webkit-transform: rotateY(180deg);
+        opacity: 0.5;
+    }
+	 100% {
+        left: 0;
+        -webkit-transform: rotateY(0deg);
+        opacity: 1;
+    }
+
+
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
