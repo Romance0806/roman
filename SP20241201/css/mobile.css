@@ -293,7 +293,7 @@
   .fot_mob .grade img {
     display: inline-block;
     vertical-align: middle;
-    position: absolute;
+    position: relative;
   }
   .fot_mob .company .pw {
     width: 40%;
