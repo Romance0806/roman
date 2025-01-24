@@ -413,8 +413,9 @@ h6, .h6 {
     color: antiquewhite;
 }
 .center_txt h2 {
-      margin-top: 2%;
-    color: #ffd099;
+margin-top: 2%;
+ color: #ffeeab;
+font-weight: 600;
 }
 .lead {
   font-size: 1.25rem;
