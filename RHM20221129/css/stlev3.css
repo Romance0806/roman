@@ -539,10 +539,11 @@ nav {
   filter: brightness(1.2);
 }
 .box1 {
-     padding: 31px 16px;
+    padding: 14px 16px;
     background: rgb(10 14 22 / 46%);
     border: 1px solid rgb(38 58 70);
     width: 70%;
+    margin-top: 1%;
 }
 .box .step img {
   display: block;
@@ -661,9 +662,9 @@ button:hover {
  width: 70%;
 }
 .box2 .icon_all {
-  position: relative;
-  margin: -4px auto -7px;
-  padding: 20px;
+     position: relative;
+    margin: -29px auto -7px;
+    padding: 20px;
 }
 .box2 .icon {
   display: inline-block;
@@ -709,10 +710,10 @@ button:hover {
   padding-top: 0;
 }
 h1 {
-  font-size: 1.5em;
-  margin: 0.67em 0;
-  color: rgb(255 255 255);
-  text-align: center;
+ font-size: 1.5em;
+    margin: 10px 0 10px 0;
+    color: rgb(255 255 255);
+    text-align: center;
 }
 .swiper-slide-active.bg2 .char01 {
   opacity: 1;
@@ -1018,18 +1019,18 @@ h4 {
 }
 /*----notice----*/
 #notice {
-  border: 1px solid #384750;
-  padding: 15px 50px;
-  color: #ffffff;
-  font-size: 18px;
-  text-decoration: none;
-  background: rgb(40 48 72);
-  transition: 0.5s;
-  margin: 0 auto;
-  max-width: 255px;
-  cursor: pointer;
-  z-index: 99;
-  position: relative;
+     border: 1px solid #384750;
+    padding: 15px 50px;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    background: rgb(40 48 72);
+    transition: 0.5s;
+    margin: 10px auto;
+    max-width: 255px;
+    cursor: pointer;
+    z-index: 99;
+    position: relative;
 }
 #notice:hover {
   color: #62B7FD;
