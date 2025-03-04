@@ -655,6 +655,7 @@ button:hover {
   background: rgb(10 14 22 / 46%);
   border: 1px solid rgb(38 58 70);
   margin-top: 10px;
+ width: 70%;
 }
 .box2 .icon_all {
   position: relative;
