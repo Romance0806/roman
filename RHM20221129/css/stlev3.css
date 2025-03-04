@@ -525,6 +525,9 @@ nav {
     margin: 15px -33px -33px 10px;
     display: contents;
 }
+.box p {
+    font-size: 16px;
+}
 .wow.fadeInRight .tooltip a: {}
 .box1, .box2 {
   display: block;
