@@ -941,13 +941,15 @@ h4 {
   font-size: 25px;
 }
 .pay h4, .pay01 h4, .pay02 h4 {
-    top: -82%;
-    left: 0;
-    right: 0;
-    font-weight: bold;
+     top: -7%;
+    font-size: 15px;
     text-align: center;
-  color: #b2dbff;
-  font-size: 26px;
+    margin: 0 auto;
+    color: #461f0d;
+    padding: 0;
+    color: #b2dbff;
+    position: relative;
+    font-size: 26px;
 }
 .pay_btn {
   display: inline-block;
