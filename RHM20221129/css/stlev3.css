@@ -522,8 +522,8 @@ nav {
   text-align: center;
 }
 .box {
-  margin: 15px auto 25px;
-  max-width: 760px;
+    margin: 15px -33px -33px 10px;
+    display: contents;
 }
 .wow.fadeInRight .tooltip a: {}
 .box1, .box2 {
@@ -536,10 +536,10 @@ nav {
   filter: brightness(1.2);
 }
 .box1 {
-  padding: 20px 80px;
-  text-align: left;
-  background: rgb(10 14 22 / 46%);
-  border: 1px solid rgb(38 58 70);
+     padding: 31px 16px;
+    background: rgb(10 14 22 / 46%);
+    border: 1px solid rgb(38 58 70);
+    width: 70%;
 }
 .box .step img {
   display: block;
