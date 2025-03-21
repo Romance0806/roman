@@ -1055,7 +1055,7 @@ ul.tabs {
 .getprops {
   display: inline-block;
   position: fixed;
-  top: 21%;
+  margin-top: -28%;
   left: 81.5%;
   width: 340px;
   height: 552px;
@@ -1447,7 +1447,7 @@ ul.rank {
 @media screen and (max-width: 960px) {
 	  .getprops {
     left: 9%;
-    margin-top: 106%;
+   margin-top: 170%;
     position: relative;
     padding-top: 35px;
   }
