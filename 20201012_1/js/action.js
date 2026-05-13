@@ -1,4 +1,4 @@
-$(document).ready(function () {
+/*$(document).ready(function () {
 	$(".evt1").click(function(){ $('html,body')
 	.animate({scrollTop:$('#evt1').offset().top}, 500)	}), 
 	$(".evt2").click(function(){ $('html,body')
@@ -15,6 +15,43 @@ $(document).ready(function () {
 	.animate({scrollTop:$('#evt7').offset().top}, 500) }),
 	$(".evt8").click(function(){ $('html,body')
 	.animate({scrollTop:$('#evt8').offset().top}, 500) })
+});*/
+    $(document).ready(function () {
+
+    $('nav ul li a').on('click', function (e) {
+        e.preventDefault();
+        var athis = this;
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top + 2
+        }, 960, 'swing', function () {
+            window.location.hash = target;
+            $('.nav ul li a').removeClass('active');
+            $(athis).addClass('active');
+        });    
+    });
+
+    $(window).scroll(function (event) {
+        var scrollPos = $(document).scrollTop();
+        if (scrollPos === 100)
+        {
+            $('a[href^="#evt1"]').addClass('active');
+            return;
+        } 
+		  
+        $('nav ul li a').each(function () {
+            var currLink = $(this);
+            var refElement = $(currLink.attr("href"));
+            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                $('nav ul li a').removeClass("active");
+                currLink.addClass("active");
+            } else {
+                currLink.removeClass("active");
+            }
+        });    
+    })    
 });
 	/*----top---*/
   $(window).scroll(function() {
