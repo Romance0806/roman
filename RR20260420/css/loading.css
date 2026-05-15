@@ -1,0 +1,141 @@
+.ready_zone {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 0;
+  overflow: hidden;
+  background: url(../images/loading/bg_1.png) no-repeat center top;
+  background-size: cover;
+  background-color: #2A0000;
+  z-index: 100;
+  display: block;
+  transform: translateZ(99px);
+  transform-style: preserve-3d;
+  transition: all 0.5s;
+  margin-top: 2%;
+}
+.completed {
+  opacity: 0;
+  visibility: hidden;
+}
+.ready_zone .r_main_box {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  padding-bottom: 13%;
+  background-color: #09a13c00;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ready_zone .note_word {
+  position: absolute;
+  width: 29%;
+  height: auto;
+  padding-bottom: 1%;
+  background-color: #09a13c00;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+.ready_zone .note_word p {
+  font-size: 1vw;
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Noto Sans TC', sans-serif;
+  margin-block-start: -0.05em;
+  margin-block-end: 0em;
+  text-align: center;
+  text-shadow: #000000b5 0em 0em 0.2em;
+}
+.ready_zone .note_word p > img {
+  width: 9%;
+  height: auto;
+  padding-bottom: 3%;
+  margin-right: 2%;
+}
+.ready_zone .mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  background: url(../images/loading/mask.png) no-repeat center top;
+  background-size: cover;
+  pointer-events: none;
+}
+.ready_zone .r_main_box .logo_load_a {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  padding-bottom: 0%;
+  top: 0%;
+  left: 0%;
+  z-index: 99;
+  -webkit-mask-image: url(../images/loading/mask654545.png);
+  -webkit-mask-mode: alpha !important;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 0%;
+  -webkit-mask-position: center top;
+  animation: alpha_m 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+.ready_zone .r_main_box .logo_load_b {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  padding-bottom: 0%;
+  top: 0%;
+  left: 0%;
+  z-index: 98;
+}
+.ready_zone .r_main_box .logo_load_b:before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/loading/logo_1.png);
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  right: 0%;
+  top: 0%;
+  padding-bottom: 65%;
+  clip: rect(0, 900px, 0, 0);
+  filter: drop-shadow(2px 2px 2px #8eae91);
+  animation: noi-anim 1s infinite alternate-reverse;
+  opacity: .8;
+}
+.ready_zone .r_main_box .logo_load_b:after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/loading/logo_1.png);
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  right: 0%;
+  top: 0%;
+  padding-bottom: 65%;
+  clip: rect(0, 900px, 0, 0);
+  filter: drop-shadow(2px 2px 2px #8eae91);
+  animation: noi-anim-2 1s infinite alternate-reverse;
+  opacity: .8;
+}
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  user-select: none;
+}
+.r_main_box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
