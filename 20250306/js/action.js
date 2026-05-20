@@ -151,21 +151,52 @@ $(document).ready(function () {
     $("#pay").fadeOut();
   });
 });
+/* =========================
+LOADING
+========================= */
 
-/*loading*/
 $(document).ready(function () {
-  $(".loading").delay(1500).fadeOut(1500);
-});
 
-/*loading*/
-$(document).ready(function () {
-  $(".loading_m").delay(1500).fadeOut(1500);
-});
+    const video = document.getElementById('loadingVideo');
 
-const video = document.getElementById('loadingVideo');
+    // 防呆
+    if(video){
 
-video.muted = true;
+        // 手機 autoplay 必須
+        video.muted = true;
+        video.setAttribute('muted','');
 
-video.play().catch(() => {
-    console.log('Autoplay blocked');
+        // iPhone 必須
+        video.setAttribute('playsinline','');
+        video.setAttribute('webkit-playsinline','');
+
+        // 嘗試播放
+        const playPromise = video.play();
+
+        if(playPromise !== undefined){
+
+            playPromise
+            .then(() => {
+
+                console.log('Video autoplay success');
+
+            })
+            .catch((error) => {
+
+                console.log('Autoplay blocked');
+
+                // 被阻擋時隱藏影片
+                video.style.display = 'none';
+
+            });
+
+        }
+
+    }
+
+    // loading fadeout
+    $(".loading,.loading_m")
+    .delay(1500)
+    .fadeOut(1500);
+
 });
