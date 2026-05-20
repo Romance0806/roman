@@ -161,3 +161,11 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".loading_m").delay(1500).fadeOut(1500);
 });
+
+const video = document.getElementById('loadingVideo');
+
+video.muted = true;
+
+video.play().catch(() => {
+    console.log('Autoplay blocked');
+});
