@@ -41,12 +41,14 @@ img:hover {
 }
 .loading video {
   display: block;
+ pointer-events:none;
 }
 /*.loading_m {
 	display: none;
 }*/
 .loading_m video {
   display: none;
+pointer-events:none;
 }
 /*----Slogan----*/
 .slogan {
