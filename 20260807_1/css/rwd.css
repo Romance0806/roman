@@ -109,7 +109,7 @@
   /* Section 1 */
   .logo-hit {
                   left: 27%;
-        top: -18%;
+        top: -4%;
         width: 45%;
   }
 
@@ -131,7 +131,7 @@
             left: 16%;
         right: 16%;
         top: auto;
-        bottom: 7%;
+        bottom: 4%;
         gap: 6px;
     }
 
@@ -143,14 +143,14 @@
 
   .inline-video {
                  left: 27%;
-        top: 70%;
+        top: 73%;
         width: 46%;
         height: 16%;
     }
 .slogan {
                 position: relative;
         z-index: 3;
-        top: 48%;
+        top: 52%;
         left: 10%;
         width: 80%;
 }
@@ -170,7 +170,7 @@
     }
 .character-s1_1 {
                    left: 0%;
-        bottom: 50%;
+        bottom: 42%;
         width: 73%;
 }
 .character-s1_2 {
@@ -514,23 +514,24 @@
     }
 
   #section4 .section4-mobile-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 28px;
+            display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -5%;
   }
 
   #section4 .section4-mobile-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    width: 80%;
+        height: 80%;
+        align-content: stretch;
+        margin: 0 auto;
+    }
   }
 
   #section4 .section4-mobile-prev,
   #section4 .section4-mobile-next {
     position: absolute;
-    top: 50%;
+    top: 40%;
     z-index: 8;
     width: 42px;
     height: 64px;
