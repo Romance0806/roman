@@ -1,0 +1,61 @@
+/*============================================================
+  popup.css｜共用彈窗
+  首頁影片、技能影片、序號說明都使用此樣式。
+============================================================*/
+
+.modal {
+    position: fixed;
+    z-index: 60;
+    inset: 0;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    background: rgba(0, 0, 0, 0.8);
+}
+.modal_1 {
+   position: fixed;
+    z-index: 60;
+    inset: 0;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    background: rgba(0, 0, 0, 0.0);
+}
+.modal-card {
+    position: relative;
+    width: min(960px, 92vw);
+    padding: 34px;
+    border-radius: 12px;
+    color: #fff;
+}
+.modal-card_1 {
+    position: relative;
+    /* width: min(960px, 92vw); */
+    padding: 34px;
+    border-radius: 12px;
+    color: #fff;
+    background-color: #000000c9;
+    border: 2px solid #d9af4b;
+    border-radius: 8px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 34px;
+  cursor: pointer;
+}
+
+.video-placeholder {
+  aspect-ratio: 16 / 9;
+  border: 1px solid #8f6c30;
+  display: grid;
+  place-items: center;
+  background: #05020c;
+  color: #ddd;
+  text-align: center;
+}
